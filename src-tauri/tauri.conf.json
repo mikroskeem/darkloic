@@ -12,7 +12,10 @@
   },
   "tauri": {
     "allowlist": {
-      "all": false
+      "all": false,
+      "window": {
+        "setFullscreen": true
+      }
     },
     "bundle": {
       "active": true,
@@ -29,7 +32,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "eu.mikroskeem.darkloic",
       "longDescription": "",
       "macOS": {
         "entitlements": null,

@@ -1,5 +1,16 @@
 lockfileVersion: '6.0'
 
+dependencies:
+  '@ruffle-rs/ruffle':
+    specifier: 0.1.0-nightly.2023.4.10
+    version: 0.1.0-nightly.2023.4.10
+  '@tauri-apps/api':
+    specifier: 1.2.0
+    version: 1.2.0
+  window:
+    specifier: link:@tauri-apps/api/window
+    version: link:@tauri-apps/api/window
+
 devDependencies:
   '@sveltejs/adapter-auto':
     specifier: ^2.0.0
@@ -352,6 +363,10 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
+  /@ruffle-rs/ruffle@0.1.0-nightly.2023.4.10:
+    resolution: {integrity: sha512-Eg3W3PCHVFwZRgkP3249UuzWQzO/LqaRMmoEMIZcdq4WHYUDRzTdE/ewPtg8OC/q9WB4X4Q0hvWevBAkOVOLxw==}
+    dev: false
+
   /@sveltejs/adapter-auto@2.0.0(@sveltejs/kit@1.15.2):
     resolution: {integrity: sha512-b+gkHFZgD771kgV3aO4avHFd7y1zhmMYy9i6xOK7m/rwmwaRO8gnF5zBc0Rgca80B2PMU1bKNxyBTHA14OzUAQ==}
     peerDependencies:
@@ -415,6 +430,11 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@tauri-apps/api@1.2.0:
+    resolution: {integrity: sha512-lsI54KI6HGf7VImuf/T9pnoejfgkNoXveP14pVV7XarrQ46rOejIVJLFqHI9sRReJMGdh2YuCoI3cc/yCWCsrw==}
+    engines: {node: '>= 14.6.0', npm: '>= 6.6.0', yarn: '>= 1.19.1'}
+    dev: false
 
   /@tauri-apps/cli-darwin-arm64@1.2.3:
     resolution: {integrity: sha512-phJN3fN8FtZZwqXg08bcxfq1+X1JSDglLvRxOxB7VWPq+O5SuB8uLyssjJsu+PIhyZZnIhTGdjhzLSFhSXfLsw==}
