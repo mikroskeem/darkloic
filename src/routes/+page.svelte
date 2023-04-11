@@ -63,8 +63,6 @@
     }
 
     onMount(async () => {
-        await loadGame();
-
         closeRequestUnlisten = await appWindow.getCurrent().listen(TauriEvent.WINDOW_CLOSE_REQUESTED, async () => {
             try {
                 await saveGame(true);
@@ -75,6 +73,8 @@
                 await process.exit(0);
             }
         });
+
+        await loadGame();
     });
 
     onDestroy(async () => {
