@@ -5,8 +5,6 @@
     import { BaseDirectory } from "@tauri-apps/api/fs";
 	import { browser } from "$app/environment";
 
-    import "@ruffle-rs/ruffle/ruffle.js";
-
     let ruffleContainer: HTMLDivElement;
     let playerInstance: RufflePlayerInstance | undefined;
 
