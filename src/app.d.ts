@@ -52,6 +52,8 @@ declare global {
     }
 
     interface RufflePlayerInstance extends Element {
+        play(): void;
+        pause(): void;
         load(what: string | RufflePlayerLoadParams): Promise<void>;
         fullscreenEnabled: boolean;
         isFullscreen: boolean;

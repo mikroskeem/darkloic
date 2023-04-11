@@ -34,7 +34,6 @@
 	"type": "module",
 	"dependencies": {
 		"@ruffle-rs/ruffle": "0.1.0-nightly.2023.4.10",
-		"@tauri-apps/api": "1.2.0",
-		"window": "link:@tauri-apps/api/window"
+		"@tauri-apps/api": "1.2.0"
 	}
 }

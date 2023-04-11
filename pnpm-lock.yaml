@@ -7,9 +7,6 @@ dependencies:
   '@tauri-apps/api':
     specifier: 1.2.0
     version: 1.2.0
-  window:
-    specifier: link:@tauri-apps/api/window
-    version: link:@tauri-apps/api/window
 
 devDependencies:
   '@sveltejs/adapter-auto':
